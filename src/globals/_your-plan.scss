@@ -1,0 +1,93 @@
+#your-plan{
+	width: 500px;
+	padding: 10px;
+	margin: 0 2% 0 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.plans{
+		width: 80%;
+		margin: 20px 5% 20px 5%;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		text-align: left;
+
+		.plan-to-choose{
+			width: 30%;
+			height: 135px;
+			margin: 0 auto;
+			display: grid;
+			border: 1px solid $Cool-gray;
+			border-radius: 5px;
+
+			img{
+				margin: 10% 75% 25% 10%;
+				padding: 5px;
+			}
+
+			h4{
+				color: $Marine-blue;
+				margin: 1% 75% 0 10%;
+			}
+
+			p{
+				margin: 0 75% 1% 10%;
+			}
+		}
+	}
+
+	.plan-toggle{
+		width: 75%;
+		margin: 10px auto 20px 5%;
+		background-color: $Magnolia;
+		color: $Cool-gray;
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	.navigation{
+		width: 80%;
+		margin: 40px auto 5px 5%;;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.back{
+			font-size: 1.1rem;
+			border: 0;
+			background-color: transparent;
+			a{
+				color: $Cool-gray;
+			}
+
+			a:hover{
+				color: $Marine-blue;
+			}
+		}
+
+		.next{
+			font-size: 1.1rem;
+			width: 80px;
+			padding: 10px;
+			border: 0;
+			border-radius: 5px;
+			background-color: $Marine-blue;
+			opacity: 0.9;
+		}
+
+		.next:hover{
+			background-color: $Marine-blue;
+			opacity: 0.8;
+		}
+
+		.next{
+			a{
+				color: $White;
+			}
+		}
+	}
+}

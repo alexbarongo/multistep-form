@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'typography';
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: $font-family;
+}
+
+html{
+	background-color: $Magnolia;
+}
+
+body{
+	width: 60%;
+	height: 45%;
+	margin: 15% auto;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $White;
+	border-radius: 15px;
+
+	header{
+		width: 25%;
+		height: 450px;
+		margin: 1% auto;
+		background-image: url("img/bg-sidebar-desktop.svg");
+		background-size: cover;
+		border-radius: 10px;
+	}
+
+	main{
+		width: 70%;
+		margin: 5% 1% 0 0;
+		display: flex;
+		overflow: hidden;
+		justify-content: space-between;
+
+		.container{
+			width: 90%;
+			margin: 0 0 0 10%;
+			display: block;
+
+			.heading{
+				width: 100%;
+				padding: 5px;
+				margin: 0 auto 10px 5%;
+			}
+		}
+	}
+
+	footer{
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+		margin: 10px 0 20px 0;
+	}
+}
+

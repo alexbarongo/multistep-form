@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Frontend Mentor | Multi-step form</title>
+  </head>
+
+  <body>
+
+    <header>
+      
+      <section id="sidebar">
+        
+        <div class="steps">
+          <h2>1</h2>
+          <div class="step">
+            <p>STEP 1</p>
+            <h3>YOUR INFO</h3>
+          </div>
+        </div>
+        
+        <div class="steps">
+          <h2>2</h2>
+          <div class="step">
+            <p>STEP 2</p>
+            <h3>SELECT PLAN</h3>
+          </div>
+        </div>
+        
+        <div class="steps">
+          <h2>3</h2>
+          <div class="step">
+            <p>STEP 3</p>
+            <h3>ADD-ONS</h3>
+          </div>
+        </div>
+        
+        <div class="steps">
+          <h2>4</h2>
+          <div class="step">
+            <p>STEP 4</p>
+            <h3>SUMMARY</h3>
+          </div>
+        </div>
+
+      </section>
+
+    </header>
+    
+    <main>
+
+      <div class="container">      
+        <section id="your-info">
+
+        <div class="heading">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+
+        <form action="/" method="GET">
+          <label for="name">Name</label>
+          <input id="name"class="data" type="text" name="name" placeholder="e.g. Stephen King"/>
+
+          <label for="email">Email</label>
+          <input id="email"class="data" type="email" name="email" placeholder="e.g. stephenking@lorem.com" required/>
+
+          <label for="phone">Phone Number</label>
+          <input id="phone"class="data" type="number" name="phone" placeholder="e.g. +1 234 567 890" required/>
+
+          <button type="submit">
+            <a href="#your-plan">Next Step</a>
+          </button>
+        </form>
+
+        </section>
+      </div>
+
+      <div class="container">
+        <section id="your-plan">
+        
+        <div class="heading">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+        </div>
+
+        <div class="plans">
+
+          <div class="plan-to-choose">
+            <img src="img/icon-arcade.svg">
+            <h4>Arcade</h4>
+            <p>$9/mo</p>
+          </div>
+
+          <div class="plan-to-choose">
+            <img src="img/icon-advanced.svg">
+            <h4>Advanced</h4>
+            <p>$12/mo</p>
+          </div>
+
+          <div class="plan-to-choose">
+            <img src="img/icon-pro.svg">
+            <h4>Pro</h4>
+            <p>$15/mo</p>
+          </div>
+
+        </div>
+
+        <div class="plan-toggle">
+          <h4>Monthly</h4>
+          <toggle></toggle>
+          <h4>Yearly</h4>
+        </div>
+
+        <div class="navigation">
+          <button class="back">
+            <a href="#your-info">Go Back</a>
+          </button>
+          <button class="next">
+            <a href="#add-ons">Next Step</a>
+          </button>
+        </div>
+
+        </section>
+      </div>
+
+      <div class="container">
+        <section id="add-ons">
+
+        <div class="heading">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+
+        <div class="picks">
+
+          <div class="radio-list">
+            <input id="service" type="radio" name="service">
+            <label for="service">
+              <h4>
+                Online service<br>
+                <span>Access to multiplayer games</span>
+              </h4>
+              <p>+$1/mo</p>
+            </label>
+          </div>
+
+          <div class="radio-list">
+            <input id="storage" type="radio" name="storage">
+            <label for="storage">
+              <h4>
+                Larger storage<br>
+                <span>Extra 1TB of cloud save</span>
+              </h4>
+              <p>+$2/mo</p>
+            </label>
+          </div>
+          
+
+          <div class="radio-list">
+            <input id="profile" type="radio" name="profile">
+            <label for="profile">
+              <h4>
+                Customizable Profile<br>
+                <span>Custom theme on your profile</span>
+              </h4>
+              <p>+$2/mo</p>
+            </label>
+          </div>
+
+        </div>
+
+        <div class="navigation">
+          <button>
+            <a href="#your-plan">Go Back</a>
+          </button>
+          <button>
+            <a href="#finish-up">Next Step</a>
+          </button>
+        </div>
+        
+        </section>
+      </div>
+
+      <div class="container">
+        <section id="finish-up">
+        
+        <div class="heading">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+        </div>
+
+         <!-- Dynamically add subscription and add-on selections here -->
+
+        <div class="navigation">
+          <button>
+            <a href="#add-ons">Go Back</a>
+          </button>
+          <button type="submit">
+            <a href="#thanks">Next Step</a>
+          </button>
+        </div>
+
+        </section>
+      </div>
+
+      <div class="container">
+        <section id="thanks">
+        
+        <img src="img/icon-thank-you.svg">
+
+        <div class="note">
+          <h1>Thank you!</h1>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun 
+            using our platform. If you ever need support, please feel free 
+            to email us at support@loremgaming.com.
+          </p>
+        </div>
+
+        </section>
+      </div>
+
+    </main> 
+
+    <footer>
+      
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/alexbarongo">Alex Barongo</a>.
+    </div>
+
+    </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+
+</html>

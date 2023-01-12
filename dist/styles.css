@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+h1 {
+  font-size: 3rem;
+  color: #02295a; }
+
+p {
+  color: #9699ab; }
+
+a {
+  text-decoration: none; }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu; }
+
+html {
+  background-color: #f0f6ff; }
+
+body {
+  width: 60%;
+  height: 45%;
+  margin: 15% auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 15px; }
+  body header {
+    width: 25%;
+    height: 450px;
+    margin: 1% auto;
+    background-image: url("img/bg-sidebar-desktop.svg");
+    background-size: cover;
+    border-radius: 10px; }
+  body main {
+    width: 70%;
+    margin: 5% 1% 0 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between; }
+    body main .container {
+      width: 90%;
+      margin: 0 0 0 10%;
+      display: block; }
+      body main .container .heading {
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto 10px 5%; }
+  body footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0 20px 0; }
+
+#sidebar {
+  width: 80%;
+  padding: 5px;
+  margin: 20px auto;
+  color: white; }
+  #sidebar .steps {
+    width: 100%;
+    display: flex;
+    margin: 30px auto; }
+    #sidebar .steps h2 {
+      font-size: 1.1rem;
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+      padding: 5px;
+      border: 1px solid white;
+      border-radius: 50%;
+      text-align: center; }
+    #sidebar .steps .step {
+      width: 70%;
+      margin: 0 auto;
+      display: block; }
+      #sidebar .steps .step h3 {
+        font-size: 0.95rem; }
+
+#your-info {
+  width: 500px;
+  padding: 10px;
+  margin: 0 2% 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #your-info form {
+    width: 100%;
+    margin: 40px auto 10px 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+    #your-info form label {
+      color: #02295a;
+      margin-left: 5px; }
+    #your-info form .data {
+      width: 75%;
+      height: 30px;
+      margin: 5px 0 10px 5px;
+      border: 1px solid #9699ab;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      color: #02295a; }
+    #your-info form .data::placeholder {
+      margin-left: 10px;
+      font-size: 0.9rem; }
+    #your-info form button {
+      width: 80px;
+      padding: 10px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #02295a;
+      margin: 50px 0 5px 60%; }
+      #your-info form button a {
+        font-size: 1.1rem;
+        color: white; }
+    #your-info form button:hover {
+      background-color: #02295a;
+      opacity: 0.8; }
+
+#your-plan {
+  width: 500px;
+  padding: 10px;
+  margin: 0 2% 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #your-plan .plans {
+    width: 80%;
+    margin: 20px 5% 20px 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: left; }
+    #your-plan .plans .plan-to-choose {
+      width: 30%;
+      height: 135px;
+      margin: 0 auto;
+      display: grid;
+      border: 1px solid #9699ab;
+      border-radius: 5px; }
+      #your-plan .plans .plan-to-choose img {
+        margin: 10% 75% 25% 10%;
+        padding: 5px; }
+      #your-plan .plans .plan-to-choose h4 {
+        color: #02295a;
+        margin: 1% 75% 0 10%; }
+      #your-plan .plans .plan-to-choose p {
+        margin: 0 75% 1% 10%; }
+  #your-plan .plan-toggle {
+    width: 75%;
+    margin: 10px auto 20px 5%;
+    background-color: #f0f6ff;
+    color: #9699ab;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px; }
+  #your-plan .navigation {
+    width: 80%;
+    margin: 40px auto 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #your-plan .navigation .back {
+      font-size: 1.1rem;
+      border: 0;
+      background-color: transparent; }
+      #your-plan .navigation .back a {
+        color: #9699ab; }
+      #your-plan .navigation .back a:hover {
+        color: #02295a; }
+    #your-plan .navigation .next {
+      font-size: 1.1rem;
+      width: 80px;
+      padding: 10px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #02295a;
+      opacity: 0.9; }
+    #your-plan .navigation .next:hover {
+      background-color: #02295a;
+      opacity: 0.8; }
+    #your-plan .navigation .next a {
+      color: white; }
+
+#add-ons {
+  width: 500px;
+  padding: 10px;
+  margin: 0 2% 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#finish-up {
+  width: 500px;
+  padding: 10px;
+  margin: 0 2% 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#thanks {
+  width: 500px;
+  padding: 10px;
+  margin: 0 2% 0 10%;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=styles.css.map */
