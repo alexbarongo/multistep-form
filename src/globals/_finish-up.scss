@@ -5,4 +5,52 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	.selection{
+		width: 80%;
+		margin: 20px 5% 20px 5%;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		text-align: left;
+	}
+
+	.navigation{
+		width: 80%;
+		margin: 40px auto 5px 5%;;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		a{
+			.back{
+			font-size: 1.1rem;
+			border: 0;
+			background-color: transparent;
+			color: $Cool-gray;
+			cursor: pointer;
+			}
+
+			.back:hover{
+				color: $Marine-blue;
+			}
+
+			.next{
+				font-size: 1.1rem;
+				width: 80px;
+				padding: 10px;
+				border: 0;
+				border-radius: 5px;
+				background-color: $Purplish-blue;
+				color: $White;
+				cursor: pointer;
+			}
+
+			.next:hover{
+				background-color: $Purplish-blue;
+				opacity: 0.8;
+			}
+
+		}
+	}
 }

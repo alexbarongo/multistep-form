@@ -28,28 +28,28 @@
 			color: $Marine-blue;
 		}
 
-		.data::placeholder{
-			margin-left: 10px;
+		.data::placeholder {
 			font-size: 0.9rem;
 		}
 
-		button{
+		a{
+			button{
 			width: 80px;
 			padding: 10px;
 			border: 0;
 			border-radius: 5px;
 			background-color: $Marine-blue;
 			margin: 50px 0 5px 60%;
-
-			a{
-				font-size: 1.1rem;
-				color: $White;
+			font-size: 1.1rem;
+			color: $White;
+			cursor: pointer;
+			
 			}
-		}
 
-		button:hover{
-			background-color: $Marine-blue;
-			opacity: 0.8;
+			button:hover{
+				background-color: $Marine-blue;
+				opacity: 0.8;
+			}
 		}
 	}
 }
