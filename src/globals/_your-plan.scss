@@ -37,7 +37,21 @@
 				margin: 0 75% 1% 10%;
 			}
 
-			.promo{
+			.promo-arcade{
+				display: none;
+				font-size: 0.8rem;
+				color: $Marine-blue;
+				width: 100%;
+			}
+
+			.promo-advanced{
+				display: none;
+				font-size: 0.8rem;
+				color: $Marine-blue;
+				width: 100%;
+			}
+
+			.promo-pro{
 				display: none;
 				font-size: 0.8rem;
 				color: $Marine-blue;

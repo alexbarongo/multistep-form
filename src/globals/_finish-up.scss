@@ -9,10 +9,11 @@
 	.selection{
 		width: 80%;
 		margin: 20px 5% 20px 5%;
-		display: flex;
+		display: block;
 		justify-content: start;
 		align-items: center;
 		text-align: left;
+		background-color: $Magnolia;
 	}
 
 	.navigation{

@@ -147,7 +147,17 @@ body {
         margin: 1% 75% 0 10%; }
       #your-plan .plans .plan-to-choose p {
         margin: 0 75% 1% 10%; }
-      #your-plan .plans .plan-to-choose .promo {
+      #your-plan .plans .plan-to-choose .promo-arcade {
+        display: none;
+        font-size: 0.8rem;
+        color: #02295a;
+        width: 100%; }
+      #your-plan .plans .plan-to-choose .promo-advanced {
+        display: none;
+        font-size: 0.8rem;
+        color: #02295a;
+        width: 100%; }
+      #your-plan .plans .plan-to-choose .promo-pro {
         display: none;
         font-size: 0.8rem;
         color: #02295a;
@@ -252,7 +262,15 @@ body {
         #add-ons .picks .radio-list h4 span {
           font-weight: normal;
           color: #9699ab; }
-      #add-ons .picks .radio-list p {
+      #add-ons .picks .radio-list .service {
+        width: 10%;
+        margin: 0 auto;
+        color: #473dff; }
+      #add-ons .picks .radio-list .storage {
+        width: 10%;
+        margin: 0 auto;
+        color: #473dff; }
+      #add-ons .picks .radio-list .profile {
         width: 10%;
         margin: 0 auto;
         color: #473dff; }
@@ -293,10 +311,11 @@ body {
   #finish-up .selection {
     width: 80%;
     margin: 20px 5% 20px 5%;
-    display: flex;
+    display: block;
     justify-content: start;
     align-items: center;
-    text-align: left; }
+    text-align: left;
+    background-color: #f0f6ff; }
   #finish-up .navigation {
     width: 80%;
     margin: 40px auto 5px 5%;
