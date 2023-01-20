@@ -69,7 +69,8 @@ body {
       padding: 5px;
       border: 1px solid white;
       border-radius: 50%;
-      text-align: center; }
+      text-align: center;
+      align-items: center; }
     #sidebar .steps .step {
       width: 70%;
       margin: 0 auto;
@@ -349,6 +350,15 @@ body {
   margin: 0 2% 0 10%;
   display: grid;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
+  #thanks img {
+    margin: 20% auto 5px auto; }
+  #thanks .note {
+    width: 75%;
+    margin: 20px auto 10% auto;
+    line-height: 1.5rem; }
+    #thanks .note h1 {
+      margin: 20px 0; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,6 +12,10 @@ const selections = document.querySelector(".selections")
 const serviceAddOns = document.querySelector(".service")
 const storageAddOns = document.querySelector(".storage")
 const profileAddOns = document.querySelector(".profile")
+const numberSteps = document.querySelectorAll(".steps h2")
+const steps = document.querySelectorAll(".container")
+
+
 
 
 toggleSwitch.addEventListener("click", switchToggle)
@@ -62,5 +66,14 @@ function planChoises(){
 planChoises()
 
 
+function stepIndicator(){
+	for(let i = 0; i < numberSteps.length; i++){
+		numberSteps[i].style.background = "hsl(206, 94%, 87%)"
+		numberSteps[i].style.color = "hsl(213, 96%, 18%)"
+		numberSteps[i].style.border = "1px solid hsl(213, 96%, 18%)"
+	}
+}
 
+
+stepIndicator()
 
