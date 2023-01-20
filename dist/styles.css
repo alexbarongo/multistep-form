@@ -69,7 +69,8 @@ body {
       padding: 5px;
       border: 1px solid white;
       border-radius: 50%;
-      text-align: center; }
+      text-align: center;
+      align-items: center; }
     #sidebar .steps .step {
       width: 70%;
       margin: 0 auto;
@@ -102,19 +103,18 @@ body {
       font-size: 1.1rem;
       color: #02295a; }
     #your-info form .data::placeholder {
-      margin-left: 10px;
       font-size: 0.9rem; }
-    #your-info form button {
+    #your-info form a button {
       width: 80px;
       padding: 10px;
       border: 0;
       border-radius: 5px;
       background-color: #02295a;
-      margin: 50px 0 5px 60%; }
-      #your-info form button a {
-        font-size: 1.1rem;
-        color: white; }
-    #your-info form button:hover {
+      margin: 50px 0 5px 60%;
+      font-size: 1.1rem;
+      color: white;
+      cursor: pointer; }
+    #your-info form a button:hover {
       background-color: #02295a;
       opacity: 0.8; }
 
@@ -138,7 +138,8 @@ body {
       margin: 0 auto;
       display: grid;
       border: 1px solid #9699ab;
-      border-radius: 5px; }
+      border-radius: 5px;
+      cursor: pointer; }
       #your-plan .plans .plan-to-choose img {
         margin: 10% 75% 25% 10%;
         padding: 5px; }
@@ -147,6 +148,24 @@ body {
         margin: 1% 75% 0 10%; }
       #your-plan .plans .plan-to-choose p {
         margin: 0 75% 1% 10%; }
+      #your-plan .plans .plan-to-choose .promo-arcade {
+        display: none;
+        font-size: 0.8rem;
+        color: #02295a;
+        width: 100%; }
+      #your-plan .plans .plan-to-choose .promo-advanced {
+        display: none;
+        font-size: 0.8rem;
+        color: #02295a;
+        width: 100%; }
+      #your-plan .plans .plan-to-choose .promo-pro {
+        display: none;
+        font-size: 0.8rem;
+        color: #02295a;
+        width: 100%; }
+    #your-plan .plans .plan-to-choose:hover {
+      border: 1px solid #adbeff;
+      box-shadow: 2px 2px 8px #bfe2fd; }
   #your-plan .plan-toggle {
     width: 75%;
     margin: 10px auto 20px 5%;
@@ -154,35 +173,61 @@ body {
     color: #9699ab;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     border-radius: 5px; }
+    #your-plan .plan-toggle .month {
+      margin: 0 0 0 33%;
+      color: #02295a; }
+    #your-plan .plan-toggle .toggle {
+      width: 26px;
+      height: 14px;
+      border: 1px solid #02295a;
+      border-radius: 10px;
+      background-color: #02295a;
+      margin: 0 auto; }
+      #your-plan .plan-toggle .toggle .round {
+        width: 12px;
+        height: 12px;
+        margin: 1px 0 0 1px;
+        border-radius: 50%;
+        background-color: #fafbff;
+        cursor: pointer; }
+      #your-plan .plan-toggle .toggle .round-clicked {
+        width: 12px;
+        height: 12px;
+        margin: 1px 0 0 13px;
+        border-radius: 50%;
+        background-color: #fafbff;
+        cursor: pointer; }
+    #your-plan .plan-toggle .year {
+      margin: 0 33% 0 0; }
   #your-plan .navigation {
     width: 80%;
     margin: 40px auto 5px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    #your-plan .navigation .back {
+    #your-plan .navigation a .back {
       font-size: 1.1rem;
       border: 0;
-      background-color: transparent; }
-      #your-plan .navigation .back a {
-        color: #9699ab; }
-      #your-plan .navigation .back a:hover {
-        color: #02295a; }
-    #your-plan .navigation .next {
+      background-color: transparent;
+      color: #9699ab;
+      cursor: pointer; }
+    #your-plan .navigation a .back:hover {
+      color: #02295a; }
+    #your-plan .navigation a .next {
       font-size: 1.1rem;
       width: 80px;
       padding: 10px;
       border: 0;
       border-radius: 5px;
       background-color: #02295a;
-      opacity: 0.9; }
-    #your-plan .navigation .next:hover {
+      color: white;
+      cursor: pointer; }
+    #your-plan .navigation a .next:hover {
       background-color: #02295a;
       opacity: 0.8; }
-    #your-plan .navigation .next a {
-      color: white; }
 
 #add-ons {
   width: 500px;
@@ -191,6 +236,71 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  #add-ons .picks {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid; }
+    #add-ons .picks .radio-list {
+      width: 80%;
+      margin: 5px 20% 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid #473dff;
+      border-radius: 5px; }
+      #add-ons .picks .radio-list input {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #473dff;
+        color: #9699ab;
+        background-color: #473dff; }
+      #add-ons .picks .radio-list h4 {
+        width: 60%;
+        margin: 0 auto;
+        color: #02295a; }
+        #add-ons .picks .radio-list h4 span {
+          font-weight: normal;
+          color: #9699ab; }
+      #add-ons .picks .radio-list .service {
+        width: 10%;
+        margin: 0 auto;
+        color: #473dff; }
+      #add-ons .picks .radio-list .storage {
+        width: 10%;
+        margin: 0 auto;
+        color: #473dff; }
+      #add-ons .picks .radio-list .profile {
+        width: 10%;
+        margin: 0 auto;
+        color: #473dff; }
+  #add-ons .navigation {
+    width: 80%;
+    margin: 40px auto 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #add-ons .navigation a .back {
+      font-size: 1.1rem;
+      border: 0;
+      background-color: transparent;
+      color: #9699ab;
+      cursor: pointer; }
+    #add-ons .navigation a .back:hover {
+      color: #02295a; }
+    #add-ons .navigation a .next {
+      font-size: 1.1rem;
+      width: 80px;
+      padding: 10px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #02295a;
+      color: white;
+      cursor: pointer; }
+    #add-ons .navigation a .next:hover {
+      background-color: #02295a;
+      opacity: 0.8; }
 
 #finish-up {
   width: 500px;
@@ -199,6 +309,40 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  #finish-up .selection {
+    width: 80%;
+    margin: 20px 5% 20px 5%;
+    display: block;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    background-color: #f0f6ff; }
+  #finish-up .navigation {
+    width: 80%;
+    margin: 40px auto 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #finish-up .navigation a .back {
+      font-size: 1.1rem;
+      border: 0;
+      background-color: transparent;
+      color: #9699ab;
+      cursor: pointer; }
+    #finish-up .navigation a .back:hover {
+      color: #02295a; }
+    #finish-up .navigation a .next {
+      font-size: 1.1rem;
+      width: 80px;
+      padding: 10px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #473dff;
+      color: white;
+      cursor: pointer; }
+    #finish-up .navigation a .next:hover {
+      background-color: #473dff;
+      opacity: 0.8; }
 
 #thanks {
   width: 500px;
@@ -206,6 +350,15 @@ body {
   margin: 0 2% 0 10%;
   display: grid;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
+  #thanks img {
+    margin: 20% auto 5px auto; }
+  #thanks .note {
+    width: 75%;
+    margin: 20px auto 10% auto;
+    line-height: 1.5rem; }
+    #thanks .note h1 {
+      margin: 20px 0; }
 
 /*# sourceMappingURL=styles.css.map */

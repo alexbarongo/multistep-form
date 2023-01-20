@@ -5,4 +5,19 @@
 	display: grid;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+
+	img{
+		margin: 20% auto 5px auto;
+	}
+
+	.note{
+		width: 75%;
+		margin: 20px auto 10% auto;
+		line-height: 1.5rem;
+
+		h1{
+			margin: 20px 0;
+		}
+	}
 }

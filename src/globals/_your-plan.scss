@@ -21,6 +21,7 @@
 			display: grid;
 			border: 1px solid $Cool-gray;
 			border-radius: 5px;
+			cursor: pointer;
 
 			img{
 				margin: 10% 75% 25% 10%;
@@ -35,6 +36,32 @@
 			p{
 				margin: 0 75% 1% 10%;
 			}
+
+			.promo-arcade{
+				display: none;
+				font-size: 0.8rem;
+				color: $Marine-blue;
+				width: 100%;
+			}
+
+			.promo-advanced{
+				display: none;
+				font-size: 0.8rem;
+				color: $Marine-blue;
+				width: 100%;
+			}
+
+			.promo-pro{
+				display: none;
+				font-size: 0.8rem;
+				color: $Marine-blue;
+				width: 100%;
+			}
+		}
+
+		.plan-to-choose:hover{
+			border: 1px solid $Pastel-blue;
+			box-shadow: 2px 2px 8px $Light-blue;
 		}
 	}
 
@@ -45,8 +72,45 @@
 		color: $Cool-gray;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		padding: 10px;
 		border-radius: 5px;
+
+		.month{
+			margin: 0 0 0 33%;
+			color: $Marine-blue;
+		}
+
+		.toggle{
+			width: 26px;
+			height: 14px;
+			border: 1px solid $Marine-blue;
+			border-radius: 10px;
+			background-color: $Marine-blue;
+			margin: 0 auto;
+
+			.round{
+				width: 12px;
+				height: 12px;
+				margin: 1px 0 0 1px;
+				border-radius: 50%;
+				background-color: $Alabaster;
+				cursor: pointer;
+			}
+
+			.round-clicked{
+				width: 12px;
+				height: 12px;
+				margin: 1px 0 0 13px;
+				border-radius: 50%;
+				background-color: $Alabaster;
+				cursor: pointer;
+			}
+		}
+
+		.year{
+			margin: 0 33% 0 0;
+		}
 	}
 
 	.navigation{
@@ -56,38 +120,37 @@
 		justify-content: space-between;
 		align-items: center;
 
-		.back{
+		a{
+			.back{
 			font-size: 1.1rem;
 			border: 0;
 			background-color: transparent;
-			a{
-				color: $Cool-gray;
+			color: $Cool-gray;
+			cursor: pointer;
 			}
 
-			a:hover{
+			.back:hover{
 				color: $Marine-blue;
 			}
-		}
 
-		.next{
-			font-size: 1.1rem;
-			width: 80px;
-			padding: 10px;
-			border: 0;
-			border-radius: 5px;
-			background-color: $Marine-blue;
-			opacity: 0.9;
-		}
-
-		.next:hover{
-			background-color: $Marine-blue;
-			opacity: 0.8;
-		}
-
-		.next{
-			a{
+			.next{
+				font-size: 1.1rem;
+				width: 80px;
+				padding: 10px;
+				border: 0;
+				border-radius: 5px;
+				background-color: $Marine-blue;
 				color: $White;
+				cursor: pointer;
 			}
+
+			.next:hover{
+				background-color: $Marine-blue;
+				opacity: 0.8;
+			}
+
 		}
 	}
 }
+
+	

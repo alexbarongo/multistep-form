@@ -60,19 +60,20 @@
           <p>Please provide your name, email address, and phone number.</p>
         </div>
 
-        <form action="/" method="GET">
+        <form>
           <label for="name">Name</label>
-          <input id="name"class="data" type="text" name="name" placeholder="e.g. Stephen King"/>
+          <input id="name"class="data" type="text" name="name" style="padding-left: 10px" placeholder="e.g. Stephen King"/>
 
           <label for="email">Email</label>
-          <input id="email"class="data" type="email" name="email" placeholder="e.g. stephenking@lorem.com" required/>
+          <input id="email"class="data" type="email" name="email" style="padding-left: 10px" placeholder="e.g. stephenking@lorem.com" required/>
 
           <label for="phone">Phone Number</label>
-          <input id="phone"class="data" type="number" name="phone" placeholder="e.g. +1 234 567 890" required/>
+          <input id="phone" class="data" type="tel" name="phone" style="padding-left: 10px" placeholder="e.g. +1 234 567 890" required/>
 
-          <button type="submit">
-            <a href="#your-plan">Next Step</a>
-          </button>
+          <a href="#your-plan">
+             <button>Next Step</button>
+          </a>
+          
         </form>
 
         </section>
@@ -91,36 +92,49 @@
           <div class="plan-to-choose">
             <img src="img/icon-arcade.svg">
             <h4>Arcade</h4>
-            <p>$9/mo</p>
+            <p class="arcade">$9/mo</p>
+            <p class="promo-arcade">2 months free</p>
           </div>
 
           <div class="plan-to-choose">
             <img src="img/icon-advanced.svg">
             <h4>Advanced</h4>
-            <p>$12/mo</p>
+            <p class="advanced">$12/mo</p>
+            <p class="promo-advanced">2 months free</p>
           </div>
 
           <div class="plan-to-choose">
             <img src="img/icon-pro.svg">
             <h4>Pro</h4>
-            <p>$15/mo</p>
+            <p class="pro">$15/mo</p>
+            <p class="promo-pro">2 months free</p>
           </div>
 
         </div>
 
         <div class="plan-toggle">
-          <h4>Monthly</h4>
-          <toggle></toggle>
-          <h4>Yearly</h4>
+          
+          <h4 class="month">Monthly</h4>
+
+          <div class="toggle">
+            <div class="round"></div>
+          </div>
+
+          <h4 class="year">Yearly</h4>
+
         </div>
 
         <div class="navigation">
-          <button class="back">
-            <a href="#your-info">Go Back</a>
-          </button>
-          <button class="next">
-            <a href="#add-ons">Next Step</a>
-          </button>
+          
+            <a href="#your-info">
+              <button class="back">Go Back</button>
+            </a>
+          
+          
+            <a href="#add-ons">
+              <button class="next">Next Step</button>
+            </a>
+          
         </div>
 
         </section>
@@ -136,49 +150,45 @@
 
         <div class="picks">
 
-          <div class="radio-list">
-            <input id="service" type="radio" name="service">
-            <label for="service">
+            <label class="radio-list">
+              <input id="service" type="radio" name="service">
               <h4>
                 Online service<br>
                 <span>Access to multiplayer games</span>
               </h4>
-              <p>+$1/mo</p>
+              <p class="service">+$1/mo</p>
             </label>
-          </div>
-
-          <div class="radio-list">
-            <input id="storage" type="radio" name="storage">
-            <label for="storage">
+          
+            <label class="radio-list">
+              <input id="storage" type="radio" name="storage">
               <h4>
                 Larger storage<br>
                 <span>Extra 1TB of cloud save</span>
               </h4>
-              <p>+$2/mo</p>
+              <p class="storage">+$2/mo</p>
             </label>
-          </div>
           
-
-          <div class="radio-list">
-            <input id="profile" type="radio" name="profile">
-            <label for="profile">
+            <label class="radio-list">
+              <input id="profile" type="radio" name="profile">
               <h4>
                 Customizable Profile<br>
                 <span>Custom theme on your profile</span>
               </h4>
-              <p>+$2/mo</p>
+              <p class="profile">+$2/mo</p>
             </label>
-          </div>
 
         </div>
 
         <div class="navigation">
-          <button>
-            <a href="#your-plan">Go Back</a>
-          </button>
-          <button>
-            <a href="#finish-up">Next Step</a>
-          </button>
+          
+            <a href="#your-plan">
+              <button class="back">Go Back</button>
+            </a>
+          
+            <a href="#finish-up">
+              <button class="next">Next Step</button>
+            </a>
+          
         </div>
         
         </section>
@@ -192,15 +202,21 @@
           <p>Double-check everything looks OK before confirming.</p>
         </div>
 
-         <!-- Dynamically add subscription and add-on selections here -->
+        <div class="selections">
+          <!-- Dynamically add subscription and add-on selections here -->
+        </div>
 
         <div class="navigation">
-          <button>
-            <a href="#add-ons">Go Back</a>
-          </button>
-          <button type="submit">
-            <a href="#thanks">Next Step</a>
-          </button>
+          
+            <a href="#add-ons">
+              <button class="back">Go Back</button>
+            </a>
+          
+          
+            <a href="#thanks">
+              <button type="submit" class="next">Confirm</button>
+            </a>
+          
         </div>
 
         </section>
@@ -209,16 +225,16 @@
       <div class="container">
         <section id="thanks">
         
-        <img src="img/icon-thank-you.svg">
+          <img src="img/icon-thank-you.svg">
 
-        <div class="note">
-          <h1>Thank you!</h1>
-          <p>
-            Thanks for confirming your subscription! We hope you have fun 
-            using our platform. If you ever need support, please feel free 
-            to email us at support@loremgaming.com.
-          </p>
-        </div>
+          <div class="note">
+            <h1>Thank you!</h1>
+            <p>
+              Thanks for confirming your subscription! We hope you have fun 
+              using our platform. If you ever need support, please feel free 
+              to email us at support@loremgaming.com.
+            </p>
+          </div>
 
         </section>
       </div>

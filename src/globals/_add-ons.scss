@@ -5,4 +5,99 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	.picks{
+		width: 90%;
+		margin: 0 auto;
+		padding: 10px;
+		display: grid;
+
+		.radio-list{
+			width: 80%;
+			margin: 5px 20% 5px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px;
+			border: 1px solid $Purplish-blue;
+			border-radius: 5px;
+
+			input{
+				width: 20px;
+				height: 20px;
+				border: 1px solid $Purplish-blue;
+				color: $Cool-gray;
+				background-color: $Purplish-blue;
+			}
+
+			h4{
+				width: 60%;
+				margin: 0 auto;
+				color: $Marine-blue;
+
+				span{
+					font-weight: normal;
+					color: $Cool-gray;
+				}
+			}
+
+			.service{
+				width: 10%;
+				margin: 0 auto;
+				color: $Purplish-blue;
+			}
+
+			.storage{
+				width: 10%;
+				margin: 0 auto;
+				color: $Purplish-blue;
+			}
+
+			.profile{
+				width: 10%;
+				margin: 0 auto;
+				color: $Purplish-blue;
+			}
+		}
+
+	}
+
+	.navigation{
+		width: 80%;
+		margin: 40px auto 5px 5%;;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		a{
+			.back{
+			font-size: 1.1rem;
+			border: 0;
+			background-color: transparent;
+			color: $Cool-gray;
+			cursor: pointer;
+			}
+
+			.back:hover{
+				color: $Marine-blue;
+			}
+
+			.next{
+				font-size: 1.1rem;
+				width: 80px;
+				padding: 10px;
+				border: 0;
+				border-radius: 5px;
+				background-color: $Marine-blue;
+				color: $White;
+				cursor: pointer;
+			}
+
+			.next:hover{
+				background-color: $Marine-blue;
+				opacity: 0.8;
+			}
+
+		}
+	}
 }
