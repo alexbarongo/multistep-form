@@ -67,8 +67,8 @@ planChoises();
 
 const checkActiveStep = () => {
   for (let y = 0; y < steps.length; y++) {
-    if(y === i){
-      for (let i = 0; i < numberSteps.length; i++) {
+    for (let i = 0; i < numberSteps.length; i++){
+      if(y === i) {
         numberSteps[i].style.background = "hsl(206, 94%, 87%)";
         numberSteps[i].style.color = "hsl(213, 96%, 18%)";
         numberSteps[i].style.border = "1px solid hsl(213, 96%, 18%)";
