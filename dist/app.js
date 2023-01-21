@@ -63,15 +63,30 @@ function planChoises() {
 planChoises();
 
 //create a function that changes the background
-//of  h2 element hwen the corresonding step is active
+//of  h2 element when the corresonding step is active
 
-//this stepIndicator function changes to all the h2s.. it ain't 'posed do that
-function stepIndicator() {
-  for (let i = 0; i < numberSteps.length; i++) {
-    numberSteps[i].style.background = "hsl(206, 94%, 87%)";
-    numberSteps[i].style.color = "hsl(213, 96%, 18%)";
-    numberSteps[i].style.border = "1px solid hsl(213, 96%, 18%)";
+const checkActiveStep = () => {
+  for (let y = 0; y < steps.length; y++) {
+    if(y === i){
+      for (let i = 0; i < numberSteps.length; i++) {
+        numberSteps[i].style.background = "hsl(206, 94%, 87%)";
+        numberSteps[i].style.color = "hsl(213, 96%, 18%)";
+        numberSteps[i].style.border = "1px solid hsl(213, 96%, 18%)";
+      }
+    }
+    
   }
 }
 
-stepIndicator();
+checkActiveStep()
+
+//this stepIndicator function changes to all the h2s.. it ain't 'posed do that
+// function stepIndicator() {
+//   for (let i = 0; i < numberSteps.length; i++) {
+//     numberSteps[i].style.background = "hsl(206, 94%, 87%)";
+//     numberSteps[i].style.color = "hsl(213, 96%, 18%)";
+//     numberSteps[i].style.border = "1px solid hsl(213, 96%, 18%)";
+//   }
+// }
+
+// stepIndicator();
