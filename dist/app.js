@@ -73,7 +73,5 @@ function stepIndicator(){
 		numberSteps[i].style.border = "1px solid hsl(213, 96%, 18%)"
 	}
 }
-
-
 stepIndicator()
 
